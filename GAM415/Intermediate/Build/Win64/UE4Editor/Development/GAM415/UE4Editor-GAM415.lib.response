@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-GAM415.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Intermediate\Build\Win64\GAM415Editor\Development\Engine\SharedPCH.Engine.h.obj"
+"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Intermediate\Build\Win64\UE4Editor\Development\GAM415\GAM415.cpp.obj"
+"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Intermediate\Build\Win64\UE4Editor\Development\GAM415\GAM415GameModeBase.cpp.obj"
+"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Intermediate\Build\Win64\UE4Editor\Development\GAM415\GAM415.init.gen.cpp.obj"
+"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Intermediate\Build\Win64\UE4Editor\Development\GAM415\GAM415GameModeBase.gen.cpp.obj"
+"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Intermediate\Build\Win64\UE4Editor\Development\GAM415\PCLaunch.rc.res"
+/OUT:"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Intermediate\Build\Win64\UE4Editor\Development\GAM415\UE4Editor-GAM415.lib"

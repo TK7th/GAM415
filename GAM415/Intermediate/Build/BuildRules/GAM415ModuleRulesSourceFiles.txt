@@ -1,0 +1,3 @@
+C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Source\GAM415\GAM415.Build.cs
+C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Source\GAM415.Target.cs
+C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Source\GAM415Editor.Target.cs
