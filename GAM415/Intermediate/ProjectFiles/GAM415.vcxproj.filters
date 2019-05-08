@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\GAM415.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{3ED4D105-7A46-42FF-86AB-23666F97A119}</UniqueIdentifier>
+			<UniqueIdentifier>{0421BC96-4509-44B0-A71F-646588F037D6}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\GAM415.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{67C3CF86-5278-4491-9378-71515AC2DF3E}</UniqueIdentifier>
+			<UniqueIdentifier>{B24E1B4F-F044-4D39-8E8A-42BD1E0B373D}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -25,7 +25,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\GAM415">
-			<UniqueIdentifier>{48E7C5C2-D57A-4CF2-8539-8BD51B2E21F7}</UniqueIdentifier>
+			<UniqueIdentifier>{C7633180-3B08-4541-B677-C701E6A8CDC8}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\GAM415\GAM415.Build.cs">
 			<Filter>Source\GAM415</Filter>

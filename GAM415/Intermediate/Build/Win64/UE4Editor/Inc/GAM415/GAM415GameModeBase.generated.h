@@ -1,11 +1,11 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "UObject/ObjectMacros.h"
-#include "UObject/ScriptMacros.h"
+#include "ObjectMacros.h"
+#include "ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #ifdef GAM415_GAM415GameModeBase_generated_h
@@ -18,19 +18,21 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define GAM415_Source_GAM415_GAM415GameModeBase_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAGAM415GameModeBase(); \
-	friend struct Z_Construct_UClass_AGAM415GameModeBase_Statics; \
+	friend GAM415_API class UClass* Z_Construct_UClass_AGAM415GameModeBase(); \
 public: \
-	DECLARE_CLASS(AGAM415GameModeBase, AGameModeBase, COMPILED_IN_FLAGS(0 | CLASS_Transient), CASTCLASS_None, TEXT("/Script/GAM415"), NO_API) \
-	DECLARE_SERIALIZER(AGAM415GameModeBase)
+	DECLARE_CLASS(AGAM415GameModeBase, AGameModeBase, COMPILED_IN_FLAGS(0 | CLASS_Transient), 0, TEXT("/Script/GAM415"), NO_API) \
+	DECLARE_SERIALIZER(AGAM415GameModeBase) \
+	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
 #define GAM415_Source_GAM415_GAM415GameModeBase_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesAGAM415GameModeBase(); \
-	friend struct Z_Construct_UClass_AGAM415GameModeBase_Statics; \
+	friend GAM415_API class UClass* Z_Construct_UClass_AGAM415GameModeBase(); \
 public: \
-	DECLARE_CLASS(AGAM415GameModeBase, AGameModeBase, COMPILED_IN_FLAGS(0 | CLASS_Transient), CASTCLASS_None, TEXT("/Script/GAM415"), NO_API) \
-	DECLARE_SERIALIZER(AGAM415GameModeBase)
+	DECLARE_CLASS(AGAM415GameModeBase, AGameModeBase, COMPILED_IN_FLAGS(0 | CLASS_Transient), 0, TEXT("/Script/GAM415"), NO_API) \
+	DECLARE_SERIALIZER(AGAM415GameModeBase) \
+	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
 #define GAM415_Source_GAM415_GAM415GameModeBase_h_15_STANDARD_CONSTRUCTORS \
