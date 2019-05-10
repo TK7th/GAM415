@@ -406,3 +406,9 @@ DerivedDataCache/*
 
 # Unreal Start Content
 */Content/StarterContent/
+*/Content/AnimStarterPack/
+*/Build
+*/Binaries
+*/DerivedDataCache
+*/Intermediate
+*/Saved
