@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeGAM415_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/GAM415",
 				PKG_CompiledIn | 0x00000000,
-				0xC8469345,
-				0x58D6C606,
+				0xFCB246CD,
+				0x2F522691,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};

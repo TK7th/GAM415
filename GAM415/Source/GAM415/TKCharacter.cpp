@@ -13,8 +13,8 @@ ATKCharacter::ATKCharacter()
 
 	// Create Spring Arm Component Object and attach it to Root Component
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>("SpringArmComponent");
-	SpringArm->SetupAttachment(GetMesh());
-	SpringArm->SetRelativeLocation(FVector(0.f, 0.f, 100.f));
+	SpringArm->SetupAttachment(RootComponent);
+	SpringArm->SetRelativeLocation(FVector(0.f, 0.f, 0.f));
 	SpringArm->TargetArmLength = 300.0f;
 	SpringArm->bEnableCameraLag = true;
 
@@ -49,8 +49,8 @@ void ATKCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAxis("Turn", this, &ATKCharacter::Turn);
 	PlayerInputComponent->BindAxis("LookUp", this, &ATKCharacter::LookUp);
 
-	//bUseControllerRotationPitch = true;
-	//bUseControllerRotationRoll = true;
+	bUseControllerRotationPitch = true;
+	bUseControllerRotationRoll = true;
 }
 
 void ATKCharacter::MoveForward(float Value)
@@ -58,7 +58,7 @@ void ATKCharacter::MoveForward(float Value)
 	if (Controller && Value)
 	{
 		FVector Direction = GetActorForwardVector();
-		AddMovementInput(Direction, Value / 2);
+		AddMovementInput(Direction, Value);
 	}
 }
 
@@ -67,7 +67,7 @@ void ATKCharacter::MoveRight(float Value)
 	if (Controller && Value)
 	{
 		FVector Direction = GetActorRightVector();
-		AddMovementInput(Direction, Value / 2);
+		AddMovementInput(Direction, Value);
 	}
 }
 

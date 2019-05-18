@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "MultiBox/MultiBoxBuilder.h"
 #include "ModuleManager.h"
 
 class FTyreeFuller_PluginModule : public IModuleInterface
