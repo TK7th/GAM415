@@ -29,8 +29,17 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Door)
 	void Open();
 
-	UPROPERTY()
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DoorOptions")
 	bool IsOpen;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DoorLocation")
+	float xAxis = 0.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DoorLocation")
+	float yAxis = 0.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DoorLocation")
+	float zAxis = 0.f;
 
 	UPROPERTY()
 	FVector TargetLocation;

@@ -25,7 +25,7 @@ ASlidingDoor::ASlidingDoor() : Super()
 void ASlidingDoor::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	Open();
 }
 
 // Called every frame
@@ -35,13 +35,12 @@ void ASlidingDoor::Tick(float DeltaTime)
 
 	if (IsOpen)
 	{
-		SetActorLocation(FMath::Lerp(GetActorLocation(), TargetLocation, 0.05f));
+		SetActorLocation(FMath::Lerp(GetActorLocation(), TargetLocation, 0.015f));
 	}
 }
 
 void ASlidingDoor::Open()
 {
-	TargetLocation = ActorToWorld().TransformPositionNoScale(FVector(0.f, 0.f, 400.f));
-	IsOpen = true;
+	TargetLocation = ActorToWorld().TransformPositionNoScale(FVector(xAxis, yAxis, zAxis));
 }
 
