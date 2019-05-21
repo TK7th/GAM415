@@ -24,9 +24,9 @@
 /wd4838
 /w44668
 /I "D:\Program Files\Epic Games\UE_4.18\Engine\Source"
-/I "C:\Users\TrunK GAMING\Desktop\TestBox\GAM415\Source"
-/I "C:\Users\TrunK GAMING\Desktop\TestBox\GAM415\Intermediate\Build\Win64\UE4Editor\Inc\GAM415"
-/I "C:\Users\TrunK GAMING\Desktop\TestBox\GAM415\Source\GAM415"
+/I "C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Source"
+/I "C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Intermediate\Build\Win64\UE4Editor\Inc\GAM415"
+/I "C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Source\GAM415"
 /I "D:\Program Files\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public"
 /I "D:\Program Files\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Internationalization"
 /I "D:\Program Files\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Async"
@@ -359,16 +359,16 @@
 /I "D:\Program Files\Epic Games\UE_4.18\Engine\Plugins\Runtime\ProceduralMeshComponent\Source\ProceduralMeshComponent\Public"
 /I "D:\Program Files\Epic Games\UE_4.18\Engine\Plugins\Runtime\ProceduralMeshComponent\Intermediate\Build\Win64\UE4Editor\Inc\ProceduralMeshComponent"
 /I "D:\Program Files\Epic Games\UE_4.18\Engine\Plugins\Runtime\ProceduralMeshComponent\Source\ProceduralMeshComponent"
-/I "C:\Users\TrunK GAMING\Desktop\TestBox\GAM415\Plugins\RuntimeMeshComponent\Source"
-/I "C:\Users\TrunK GAMING\Desktop\TestBox\GAM415\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent\Public"
-/I "C:\Users\TrunK GAMING\Desktop\TestBox\GAM415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Inc\RuntimeMeshComponent"
-/I "C:\Users\TrunK GAMING\Desktop\TestBox\GAM415\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent"
+/I "C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\RuntimeMeshComponent\Source"
+/I "C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent\Public"
+/I "C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\RuntimeMeshComponent\Intermediate\Build\Win64\UE4Editor\Inc\RuntimeMeshComponent"
+/I "C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\RuntimeMeshComponent\Source\RuntimeMeshComponent"
 /FI"D:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Yu"D:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Fp"D:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\TrunK GAMING\Desktop\TestBox\GAM415\Source\GAM415\GAM415GameModeBase.cpp"
-/FI"C:\Users\TrunK GAMING\Desktop\TestBox\GAM415\Intermediate\Build\Win64\UE4Editor\Development\GAM415\Definitions.GAM415.h"
-/Fo"C:\Users\TrunK GAMING\Desktop\TestBox\GAM415\Intermediate\Build\Win64\UE4Editor\Development\GAM415\GAM415GameModeBase.cpp.obj"
+"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Source\GAM415\GAM415GameModeBase.cpp"
+/FI"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Intermediate\Build\Win64\UE4Editor\Development\GAM415\Definitions.GAM415.h"
+/Fo"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Intermediate\Build\Win64\UE4Editor\Development\GAM415\GAM415GameModeBase.cpp.obj"
 /TP
 /GR-
 /W4

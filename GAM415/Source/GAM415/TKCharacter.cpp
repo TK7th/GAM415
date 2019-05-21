@@ -17,12 +17,14 @@ ATKCharacter::ATKCharacter()
 	SpringArm->SetRelativeLocation(FVector(0.f, 0.f, 0.f));
 	SpringArm->TargetArmLength = 300.0f;
 	SpringArm->bEnableCameraLag = true;
+	SpringArm->bUsePawnControlRotation = true;
 
 	// Create Third Person Camera and attach it to the Spring Arm Component
 	ThirdPersonCamera = CreateDefaultSubobject<UCameraComponent>("ThirdPersonCamera");
-	ThirdPersonCamera->SetupAttachment(SpringArm);
+	ThirdPersonCamera->SetupAttachment(SpringArm, USpringArmComponent::SocketName);
 	ThirdPersonCamera->bUsePawnControlRotation = true;
 
+	AutoPossessPlayer = EAutoReceiveInput::Player0;
 }
 
 // Called when the game starts or when spawned
@@ -44,15 +46,14 @@ void ATKCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+	// Update player's movement location each frame
 	PlayerInputComponent->BindAxis("Forward", this, &ATKCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("Right", this, &ATKCharacter::MoveRight);
 	PlayerInputComponent->BindAxis("Turn", this, &ATKCharacter::Turn);
 	PlayerInputComponent->BindAxis("LookUp", this, &ATKCharacter::LookUp);
-
-	bUseControllerRotationPitch = true;
-	bUseControllerRotationRoll = true;
 }
 
+// Functions called for player movement
 void ATKCharacter::MoveForward(float Value)
 {
 	if (Controller && Value)
