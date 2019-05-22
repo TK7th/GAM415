@@ -394,6 +394,9 @@
     <ClInclude Include="..\..\Source\GAM415\SlateHUDGameMode.h">
       <Filter>Source\GAM415</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\GAM415\ToggleHUDGameMode.h">
+      <Filter>Source\GAM415</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\GAM415\CustomHUD.cpp">
@@ -406,6 +409,9 @@
       <Filter>Source\GAM415</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\GAM415\SlateHUDGameMode.cpp">
+      <Filter>Source\GAM415</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\GAM415\ToggleHUDGameMode.cpp">
       <Filter>Source\GAM415</Filter>
     </ClCompile>
   </ItemGroup>

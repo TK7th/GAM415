@@ -26,6 +26,17 @@ void AMyCustomActor02::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	FRotator Rotate = FRotator(0.f, NextMove, 0.f);
+
+	SetActorRotation(Rotate);
+
+	if (NextMove > 359.f)
+	{
+		NextMove = 0.f;
+	}
+
+	NextMove++;
+
 }
 
 // Called when the actor is done spawned in the world

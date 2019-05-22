@@ -406,6 +406,8 @@
     <NMakeOutput>..\..\Binaries\HTML5\GAM415-HTML5-Shipping.js</NMakeOutput>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\GAM415\ToggleHUDGameMode.cpp" />
+    <ClInclude Include="..\..\Source\GAM415\ToggleHUDGameMode.h" />
     <None Include="..\..\GAM415.uproject" />
     <None Include="..\..\Source\GAM415.Target.cs" />
     <None Include="..\..\Source\GAM415Editor.Target.cs" />

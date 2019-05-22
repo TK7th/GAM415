@@ -38,4 +38,6 @@ public:
 
 private:
 
+	float NextMove = 0.f;
+
 };
