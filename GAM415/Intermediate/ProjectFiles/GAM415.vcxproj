@@ -483,8 +483,14 @@
     <ClInclude Include="..\..\Source\GAM415\CubeActor01.h" />
     <ClCompile Include="..\..\Source\GAM415\CubeActor02.cpp" />
     <ClInclude Include="..\..\Source\GAM415\CubeActor02.h" />
+    <ClCompile Include="..\..\Source\GAM415\CustomGM.cpp" />
+    <ClCompile Include="..\..\Source\GAM415\CustomHUD.cpp" />
+    <ClInclude Include="..\..\Source\GAM415\CustomGM.h" />
+    <ClInclude Include="..\..\Source\GAM415\CustomHUD.h" />
     <None Include="..\..\Source\GAM415\GAM415.Build.cs" />
+    <ClCompile Include="..\..\Source\GAM415\CustomHUDPlayerController.cpp" />
     <ClCompile Include="..\..\Source\GAM415\GAM415.cpp" />
+    <ClInclude Include="..\..\Source\GAM415\CustomHUDPlayerController.h" />
     <ClInclude Include="..\..\Source\GAM415\GAM415.h" />
     <ClCompile Include="..\..\Source\GAM415\GAM415GameModeBase.cpp" />
     <ClInclude Include="..\..\Source\GAM415\GAM415GameModeBase.h" />
@@ -493,8 +499,10 @@
     <ClCompile Include="..\..\Source\GAM415\MyCustomActor01.cpp" />
     <ClInclude Include="..\..\Source\GAM415\MyCustomActor01.h" />
     <ClCompile Include="..\..\Source\GAM415\MyCustomActor02.cpp" />
-    <ClCompile Include="..\..\Source\GAM415\SlidingDoor.cpp" />
     <ClInclude Include="..\..\Source\GAM415\MyCustomActor02.h" />
+    <ClCompile Include="..\..\Source\GAM415\SlateHUDGameMode.cpp" />
+    <ClCompile Include="..\..\Source\GAM415\SlidingDoor.cpp" />
+    <ClInclude Include="..\..\Source\GAM415\SlateHUDGameMode.h" />
     <ClInclude Include="..\..\Source\GAM415\SlidingDoor.h" />
     <ClCompile Include="..\..\Source\GAM415\Spotter.cpp" />
     <ClInclude Include="..\..\Source\GAM415\Spotter.h" />
