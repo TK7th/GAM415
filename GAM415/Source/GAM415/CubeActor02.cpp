@@ -8,6 +8,9 @@ ACubeActor02::ACubeActor02()
 {
 	Mesh = CreateDefaultSubobject<URuntimeMeshComponent>(TEXT("GenerateMesh"));
 	RootComponent = Mesh;
+
+	CustomRoughness = 1.0f;
+	CustomMetallic = 0.0f;
 }
 
 // Called when the game starts or when spawned
@@ -21,6 +24,28 @@ void ACubeActor02::BeginPlay()
 void ACubeActor02::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	if (CustomRoughness > 0.0f)
+	{
+		CustomRoughness -= DeltaTime;
+		CustomMetallic += DeltaTime;
+
+	}
+
+	else if (CustomRoughness < 1.0f)
+	{
+		CustomRoughness += DeltaTime;
+		CustomMetallic -= DeltaTime;
+	}
+
+	UMaterialInstanceDynamic* CustomMaterialInstance1 = Mesh->CreateDynamicMaterialInstance(0);
+	UMaterialInstanceDynamic* CustomMaterialInstance2 = Mesh->CreateDynamicMaterialInstance(0);
+
+	if ((CustomMaterialInstance1 != nullptr) && (CustomMaterialInstance2 != nullptr))
+	{
+		CustomMaterialInstance1->SetScalarParameterValue(FName("CustomRoughness"), CustomRoughness);
+		CustomMaterialInstance2->SetScalarParameterValue(FName("CustomMetallic"), CustomMetallic);
+	}
 
 }
 
@@ -48,10 +73,10 @@ void ACubeActor02::GenerateBoxMesh()
 	TArray < int32 > Triangles;
 	TArray < FColor > Colors;
 	CreateBoxMesh(FVector(50, 50, 50), Vertices, Triangles,
-		Normals, TextureCoordinates, Tangents, Colors); // Create the mesh section, specifying collision.  
+	Normals, TextureCoordinates, Tangents, Colors); // Create the mesh section, specifying collision.  
 
 	Mesh->CreateMeshSection(0, Vertices, Triangles, Normals,
-		TextureCoordinates, Colors, Tangents, true);
+	TextureCoordinates, Colors, Tangents, true);
 }
 
 void ACubeActor02::CreateBoxMesh(FVector BoxRadius, TArray<FVector>& Vertices, TArray<int32>& Triangles,

@@ -25,12 +25,16 @@ public:
 		TArray <FVector> & Normals, TArray <FVector2D> & UVs, TArray <FRuntimeMeshTangent> & Tangents,
 		TArray <FColor> & Colors);
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Mesh")
+	URuntimeMeshComponent* Mesh;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 private:
-	UPROPERTY(EditAnywhere)
-	URuntimeMeshComponent* Mesh;
+
+	float CustomRoughness;
+	float CustomMetallic;
 	
 };
