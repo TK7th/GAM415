@@ -31,9 +31,17 @@ public:
 	UFUNCTION(BlueprintImplementableEvent)
 	void OnPlayerSpotted(APawn* Player);
 
+	// Name of the Actor
+	UPROPERTY(EditAnywhere, BlueprintReadWrite,
+	Category = "ActorName")
+	FString Name;
+
+	// Returns message containing the Name property
+	UFUNCTION(BlueprintCallable, Category = Properties)
+	FString ToString();
+
 protected:
 
 private:
-	
 	
 };

@@ -67,3 +67,8 @@ void ASpotter::Tick(float DeltaTime)
 	}
 	DrawDebugLine(GetWorld(), GetActorLocation(), EndLocation, FColor::Blue);
 }
+
+FString ASpotter::ToString()
+{
+	return FString::Printf(TEXT("An instance of ASpotter: %s"), *Name);
+}

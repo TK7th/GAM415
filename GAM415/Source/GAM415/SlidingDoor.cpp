@@ -16,7 +16,7 @@ ASlidingDoor::ASlidingDoor() : Super()
 	GetStaticMeshComponent()->SetMobility(EComponentMobility::Movable);
 	GetStaticMeshComponent()->SetWorldScale3D(FVector(0.3f, 2.f, 3.f));
 	SetActorEnableCollision(true);
-	IsOpen = false;
+	DoorIsOpen = false;
 	PrimaryActorTick.bStartWithTickEnabled = true;
 	PrimaryActorTick.bCanEverTick = true;
 }
@@ -26,6 +26,8 @@ void ASlidingDoor::BeginPlay()
 {
 	Super::BeginPlay();
 	Open();
+
+	SetLifeSpan(10);
 }
 
 // Called every frame
@@ -33,9 +35,30 @@ void ASlidingDoor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (IsOpen)
+	// Lift the actor
+
+	if ( (DoorIsOpen == true) && (DoorTimer < 10.f) )
 	{
 		SetActorLocation(FMath::Lerp(GetActorLocation(), TargetLocation, 0.015f));
+
+		DoorTimer = DoorTimer + 0.1f;
+
+		if (DoorTimer >= 10.f)
+		{
+			DoorIsOpen = false;
+		}
+	}
+	// Lower the actor
+	else if (DoorIsOpen == false)
+	{
+		SetActorLocation(FMath::Lerp(GetActorLocation(), FVector(-600.f, GetActorLocation().Y, 0.f), 0.015f));
+
+		DoorTimer = DoorTimer - 0.1f;
+
+		if ( (DoorIsOpen == false) && (DoorTimer <= 0.f) )
+		{
+			DoorIsOpen = true;
+		}
 	}
 }
 

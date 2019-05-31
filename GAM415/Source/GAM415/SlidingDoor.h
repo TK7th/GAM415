@@ -30,7 +30,7 @@ public:
 	void Open();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DoorOptions")
-	bool IsOpen;
+	bool DoorIsOpen;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "DoorLocation")
 	float xAxis = 0.f;
@@ -43,5 +43,9 @@ public:
 
 	UPROPERTY()
 	FVector TargetLocation;
+
+private:
+
+	float DoorTimer = 0.f;
 	
 };

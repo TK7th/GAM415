@@ -427,9 +427,27 @@
     <ClInclude Include="..\..\Source\GAM415\MyCustomActor03.h">
       <Filter>Source\GAM415</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\GAM415\MyCustomActor04.h">
+      <Filter>Source\GAM415</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\GAM415\RotateActorComponent.h">
+      <Filter>Source\GAM415</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\GAM415\FollowActorComponent.h">
+      <Filter>Source\GAM415</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\GAM415\MyCustomActor03.cpp">
+      <Filter>Source\GAM415</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\GAM415\MyCustomActor04.cpp">
+      <Filter>Source\GAM415</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\GAM415\RotateActorComponent.cpp">
+      <Filter>Source\GAM415</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\GAM415\FollowActorComponent.cpp">
       <Filter>Source\GAM415</Filter>
     </ClCompile>
   </ItemGroup>
