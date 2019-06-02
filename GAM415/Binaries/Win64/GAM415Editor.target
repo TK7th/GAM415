@@ -51,6 +51,18 @@
 			"IsPrecompiled": true
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/Foo/Binaries/Win64/UE4Editor-Foo.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Foo/Binaries/Win64/UE4Editor-Foo.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Foo/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-Foo.lib",
+			"Type": "ImportLibrary"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/ComputeShader/Binaries/Win64/UE4Editor-ComputeShader.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -5763,6 +5775,10 @@
 			"IsPrecompiled": true
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/Foo/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(ProjectDir)/Plugins/ComputeShader/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
@@ -5790,6 +5806,10 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Marketplace/AutoSizeComments/AutoSizeComments.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/Foo/Foo.uplugin",
 			"Type": "UFS"
 		},
 		{
