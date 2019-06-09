@@ -24,12 +24,12 @@
 /wd4838
 /w44668
 /I "D:\Program Files\Epic Games\UE_4.18\Engine\Source"
-/I "C:\Users\TrunK GAMING\Desktop\GAM415\Plugins\Foo\Source\Foo\Private"
-/I "C:\Users\TrunK GAMING\Desktop\GAM415\Plugins\Foo\Source"
-/I "C:\Users\TrunK GAMING\Desktop\GAM415\Plugins\Foo\Source\Foo\Classes"
-/I "C:\Users\TrunK GAMING\Desktop\GAM415\Plugins\Foo\Source\Foo\Public"
-/I "C:\Users\TrunK GAMING\Desktop\GAM415\Plugins\Foo\Intermediate\Build\Win64\UE4Editor\Inc\Foo"
-/I "C:\Users\TrunK GAMING\Desktop\GAM415\Plugins\Foo\Source\Foo"
+/I "C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\Foo\Source\Foo\Private"
+/I "C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\Foo\Source"
+/I "C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\Foo\Source\Foo\Classes"
+/I "C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\Foo\Source\Foo\Public"
+/I "C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\Foo\Intermediate\Build\Win64\UE4Editor\Inc\Foo"
+/I "C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\Foo\Source\Foo"
 /I "D:\Program Files\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public"
 /I "D:\Program Files\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Internationalization"
 /I "D:\Program Files\Epic Games\UE_4.18\Engine\Source\Runtime\Core\Public\Async"
@@ -362,9 +362,9 @@
 /FI"D:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Yu"D:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Fp"D:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\TrunK GAMING\Desktop\GAM415\Plugins\Foo\Intermediate\Build\Win64\UE4Editor\Development\Foo\Module.Foo.cpp"
-/FI"C:\Users\TrunK GAMING\Desktop\GAM415\Plugins\Foo\Intermediate\Build\Win64\UE4Editor\Development\Foo\Definitions.Foo.h"
-/Fo"C:\Users\TrunK GAMING\Desktop\GAM415\Plugins\Foo\Intermediate\Build\Win64\UE4Editor\Development\Foo\Module.Foo.cpp.obj"
+"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\Foo\Intermediate\Build\Win64\UE4Editor\Development\Foo\Module.Foo.cpp"
+/FI"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\Foo\Intermediate\Build\Win64\UE4Editor\Development\Foo\Definitions.Foo.h"
+/Fo"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\Foo\Intermediate\Build\Win64\UE4Editor\Development\Foo\Module.Foo.cpp.obj"
 /TP
 /GR-
 /W4
