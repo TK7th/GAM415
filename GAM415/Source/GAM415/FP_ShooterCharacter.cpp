@@ -212,57 +212,57 @@ void AFP_ShooterCharacter::OnFire()
 	// try and fire a projectile
 	if (ProjectileClass != NULL)
 	{
-		//UWorld* const World = GetWorld();
-		//if (World != NULL)
-		//{
-		//	if (bUsingMotionControllers)
-		//	{
-		//		const FRotator SpawnRotation = VR_MuzzleLocation->GetComponentRotation();
-		//		const FVector SpawnLocation = VR_MuzzleLocation->GetComponentLocation();
-		//		World->SpawnActor<AFP_ShooterProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);
-		//	}
-		//	else
-		//	{
-		//		const FRotator SpawnRotation = GetControlRotation();
-		//		// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
-		//		const FVector SpawnLocation = ((FP_MuzzleLocation != nullptr) ? FP_MuzzleLocation->GetComponentLocation() : GetActorLocation()) + SpawnRotation.RotateVector(GunOffset);
-
-		//		//Set Spawn Collision Handling Override
-		//		FActorSpawnParameters ActorSpawnParams;
-		//		ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
-
-		//		// spawn the projectile at the muzzle
-		//		World->SpawnActor<AFP_ShooterProjectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
-		//	}
-		//}
-
-	//Try to set a texture to the object we hit!
-		FHitResult HitResult;
-		FVector StartLocation = FirstPersonCameraComponent->GetComponentLocation();
-		FRotator Direction = FirstPersonCameraComponent->GetComponentRotation();
-		FVector EndLocation = StartLocation + Direction.Vector() * 10000;
-		FCollisionQueryParams QueryParams;
-		QueryParams.AddIgnoredActor(this);
-
-		if (GetWorld()->LineTraceSingleByChannel(HitResult, StartLocation, EndLocation, ECC_Visibility, QueryParams))
+		UWorld* const World = GetWorld();
+		if (World != NULL)
 		{
-			TArray<UStaticMeshComponent*> StaticMeshComponents = TArray<UStaticMeshComponent*>();
-			AActor* HitActor = HitResult.GetActor();
-
-			if (NULL != HitActor)
+			if (bUsingMotionControllers)
 			{
-				HitActor->GetComponents<UStaticMeshComponent>(StaticMeshComponents);
-				for (int32 i = 0; i < StaticMeshComponents.Num(); i++)
-				{
-					UStaticMeshComponent* CurrentStaticMeshPtr = StaticMeshComponents[i];
-					CurrentStaticMeshPtr->SetMaterial(0, MaterialToApplyToClickedObject);
-					UMaterialInstanceDynamic* MID = CurrentStaticMeshPtr->CreateAndSetMaterialInstanceDynamic(0);
-					UTexture* CastedRenderTarget = Cast<UTexture>(RenderTarget);
-					MID->SetTextureParameterValue("InputTexture", CastedRenderTarget);
-				}
+				const FRotator SpawnRotation = VR_MuzzleLocation->GetComponentRotation();
+				const FVector SpawnLocation = VR_MuzzleLocation->GetComponentLocation();
+				World->SpawnActor<AFP_ShooterProjectile>(ProjectileClass, SpawnLocation, SpawnRotation);
+			}
+			else
+			{
+				const FRotator SpawnRotation = GetControlRotation();
+				// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
+				const FVector SpawnLocation = ((FP_MuzzleLocation != nullptr) ? FP_MuzzleLocation->GetComponentLocation() : GetActorLocation()) + SpawnRotation.RotateVector(GunOffset);
+
+				//Set Spawn Collision Handling Override
+				FActorSpawnParameters ActorSpawnParams;
+				ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
+
+				// spawn the projectile at the muzzle
+				World->SpawnActor<AFP_ShooterProjectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
 			}
 		}
 	}
+
+	////Try to set a texture to the object we hit!
+	//FHitResult HitResult;
+	//FVector StartLocation = FirstPersonCameraComponent->GetComponentLocation();
+	//FRotator Direction = FirstPersonCameraComponent->GetComponentRotation();
+	//FVector EndLocation = StartLocation + Direction.Vector() * 10000;
+	//FCollisionQueryParams QueryParams;
+	//QueryParams.AddIgnoredActor(this);
+
+	//if (GetWorld()->LineTraceSingleByChannel(HitResult, StartLocation, EndLocation, ECC_Visibility, QueryParams))
+	//{
+	//	TArray<UStaticMeshComponent*> StaticMeshComponents = TArray<UStaticMeshComponent*>();
+	//	AActor* HitActor = HitResult.GetActor();
+
+	//	if (NULL != HitActor)
+	//	{
+	//		HitActor->GetComponents<UStaticMeshComponent>(StaticMeshComponents);
+	//		for (int32 i = 0; i < StaticMeshComponents.Num(); i++)
+	//		{
+	//			UStaticMeshComponent* CurrentStaticMeshPtr = StaticMeshComponents[i];
+	//			CurrentStaticMeshPtr->SetMaterial(0, MaterialToApplyToClickedObject);
+	//			UMaterialInstanceDynamic* MID = CurrentStaticMeshPtr->CreateAndSetMaterialInstanceDynamic(0);
+	//			UTexture* CastedRenderTarget = Cast<UTexture>(RenderTarget);
+	//			MID->SetTextureParameterValue("InputTexture", CastedRenderTarget);
+	//		}
+	//	}
+	//}
 
 	// try and play the sound if specified
 	if (FireSound != NULL)

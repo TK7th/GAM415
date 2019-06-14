@@ -3,6 +3,7 @@
 #pragma once
 
 #include "Engine.h"
+#include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "PixelShaderUsageExample.h"
 #include "ComputeShaderUsageExample.h"
@@ -18,10 +19,6 @@ class AFP_ShooterCharacter : public ACharacter
 	/** Pawn mesh: 1st person view (arms; seen only by self) */
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
 		class USkeletalMeshComponent* Mesh1P;
-
-	/** Gun mesh: 1st person view (seen only by self) */
-	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
-		class USkeletalMeshComponent* FP_Gun;
 
 	/** Location on gun mesh where projectiles should spawn. */
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
@@ -49,6 +46,10 @@ class AFP_ShooterCharacter : public ACharacter
 
 public:
 	AFP_ShooterCharacter();
+
+	/** Gun mesh: 1st person view (seen only by self) */
+	UPROPERTY(BlueprintReadWrite, Category = Mesh)
+		class USkeletalMeshComponent* FP_Gun;
 
 protected:
 	virtual void BeginPlay();
@@ -169,6 +170,18 @@ private:
 	void ModifyComputeShaderBlend(float NewScalar);
 	void SavePixelShaderOutput();
 	void SaveComputeShaderOutput();
+
+	// Player initial stamina
+	UPROPERTY(EditAnywhere, Category = "Stamina")
+	float InitialStamina;
+
+	// Player current stamina
+	UPROPERTY(EditAnywhere, Category = "Stamina")
+	float CurrentStamina;
+
+	// Player health amount
+	UPROPERTY(EditAnywhere, Category = "Health")
+	float HealthAmount;
 
 
 };

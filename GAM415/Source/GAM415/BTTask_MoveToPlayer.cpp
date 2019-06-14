@@ -12,7 +12,7 @@ EBTNodeResult::Type UBTTask_MoveToPlayer::ExecuteTask(UBehaviorTreeComponent& Ow
 	ACharacter * Target = Cast<ACharacter>(Blackboard->GetValue<UBlackboardKeyType_Object>(EnemyController->TargetKeyID));
 	if (Target)
 	{
-		EnemyController->MoveToActor(Target, 50.0f);
+		EnemyController->MoveToActor(Target, 0.0f);
 		return EBTNodeResult::Succeeded;
 	}
 	return EBTNodeResult::Failed;

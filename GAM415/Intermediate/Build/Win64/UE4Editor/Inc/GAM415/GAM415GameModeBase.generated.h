@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define GAM415_GAM415GameModeBase_generated_h
 
-#define GAM415_Source_GAM415_GAM415GameModeBase_h_15_RPC_WRAPPERS
-#define GAM415_Source_GAM415_GAM415GameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define GAM415_Source_GAM415_GAM415GameModeBase_h_15_INCLASS_NO_PURE_DECLS \
+#define GAM415_Source_GAM415_GAM415GameModeBase_h_16_RPC_WRAPPERS
+#define GAM415_Source_GAM415_GAM415GameModeBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define GAM415_Source_GAM415_GAM415GameModeBase_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAGAM415GameModeBase(); \
 	friend GAM415_API class UClass* Z_Construct_UClass_AGAM415GameModeBase(); \
@@ -25,7 +25,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define GAM415_Source_GAM415_GAM415GameModeBase_h_15_INCLASS \
+#define GAM415_Source_GAM415_GAM415GameModeBase_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesAGAM415GameModeBase(); \
 	friend GAM415_API class UClass* Z_Construct_UClass_AGAM415GameModeBase(); \
@@ -35,7 +35,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define GAM415_Source_GAM415_GAM415GameModeBase_h_15_STANDARD_CONSTRUCTORS \
+#define GAM415_Source_GAM415_GAM415GameModeBase_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AGAM415GameModeBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AGAM415GameModeBase) \
@@ -48,7 +48,7 @@ private: \
 public:
 
 
-#define GAM415_Source_GAM415_GAM415GameModeBase_h_15_ENHANCED_CONSTRUCTORS \
+#define GAM415_Source_GAM415_GAM415GameModeBase_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AGAM415GameModeBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -61,26 +61,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGAM415GameModeBase); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AGAM415GameModeBase)
 
 
-#define GAM415_Source_GAM415_GAM415GameModeBase_h_15_PRIVATE_PROPERTY_OFFSET
-#define GAM415_Source_GAM415_GAM415GameModeBase_h_12_PROLOG
-#define GAM415_Source_GAM415_GAM415GameModeBase_h_15_GENERATED_BODY_LEGACY \
+#define GAM415_Source_GAM415_GAM415GameModeBase_h_16_PRIVATE_PROPERTY_OFFSET
+#define GAM415_Source_GAM415_GAM415GameModeBase_h_13_PROLOG
+#define GAM415_Source_GAM415_GAM415GameModeBase_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GAM415_Source_GAM415_GAM415GameModeBase_h_15_PRIVATE_PROPERTY_OFFSET \
-	GAM415_Source_GAM415_GAM415GameModeBase_h_15_RPC_WRAPPERS \
-	GAM415_Source_GAM415_GAM415GameModeBase_h_15_INCLASS \
-	GAM415_Source_GAM415_GAM415GameModeBase_h_15_STANDARD_CONSTRUCTORS \
+	GAM415_Source_GAM415_GAM415GameModeBase_h_16_PRIVATE_PROPERTY_OFFSET \
+	GAM415_Source_GAM415_GAM415GameModeBase_h_16_RPC_WRAPPERS \
+	GAM415_Source_GAM415_GAM415GameModeBase_h_16_INCLASS \
+	GAM415_Source_GAM415_GAM415GameModeBase_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define GAM415_Source_GAM415_GAM415GameModeBase_h_15_GENERATED_BODY \
+#define GAM415_Source_GAM415_GAM415GameModeBase_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GAM415_Source_GAM415_GAM415GameModeBase_h_15_PRIVATE_PROPERTY_OFFSET \
-	GAM415_Source_GAM415_GAM415GameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	GAM415_Source_GAM415_GAM415GameModeBase_h_15_INCLASS_NO_PURE_DECLS \
-	GAM415_Source_GAM415_GAM415GameModeBase_h_15_ENHANCED_CONSTRUCTORS \
+	GAM415_Source_GAM415_GAM415GameModeBase_h_16_PRIVATE_PROPERTY_OFFSET \
+	GAM415_Source_GAM415_GAM415GameModeBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	GAM415_Source_GAM415_GAM415GameModeBase_h_16_INCLASS_NO_PURE_DECLS \
+	GAM415_Source_GAM415_GAM415GameModeBase_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
