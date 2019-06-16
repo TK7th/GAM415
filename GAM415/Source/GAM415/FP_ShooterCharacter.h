@@ -154,6 +154,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = ShaderDemo)
 		UTextureRenderTarget2D * RenderTarget;
 
+	UFUNCTION(BlueprintCallable)
+	void SetAmmoCount(int32 Value);
+	
+	UFUNCTION(BlueprintPure)
+	int32 GetAmmoCount();
+
 protected:
 	virtual void BeginDestroy() override;
 	virtual void Tick(float DeltaSeconds) override;
@@ -183,6 +189,9 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Health")
 	float HealthAmount;
 
+	// Player's ammo count
+	UPROPERTY(EditAnywhere, Category = "Ammo")
+	int32 AmmoCount;
 
 };
 

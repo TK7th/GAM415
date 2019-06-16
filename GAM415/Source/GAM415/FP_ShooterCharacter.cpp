@@ -92,6 +92,9 @@ AFP_ShooterCharacter::AFP_ShooterCharacter()
 	ComputeShaderBlendScalar = 0;
 	TotalElapsedTime = 0;
 
+	// Start player ammo count at 30
+	AmmoCount = 30;
+
 }
 
 void AFP_ShooterCharacter::BeginPlay()
@@ -117,6 +120,16 @@ void AFP_ShooterCharacter::BeginPlay()
 	PixelShading = new FPixelShaderUsageExample(PixelShaderTopLeftColor, GetWorld()->Scene->GetFeatureLevel());
 	ComputeShading = new FComputeShaderUsageExample(ComputeShaderSimulationSpeed, 1024, 1024, GetWorld()->Scene->GetFeatureLevel());
 
+}
+
+void AFP_ShooterCharacter::SetAmmoCount(int32 Value)
+{
+	AmmoCount = Value;
+}
+
+int32 AFP_ShooterCharacter::GetAmmoCount()
+{
+	return AmmoCount;
 }
 
 // Cleanup 
@@ -231,8 +244,12 @@ void AFP_ShooterCharacter::OnFire()
 				FActorSpawnParameters ActorSpawnParams;
 				ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
 
-				// spawn the projectile at the muzzle
-				World->SpawnActor<AFP_ShooterProjectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
+				// Spawn projectile whenever the count is above 0
+				if (GetAmmoCount() >= 1)
+				{
+					// spawn the projectile at the muzzle
+					World->SpawnActor<AFP_ShooterProjectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
+				}
 			}
 		}
 	}
