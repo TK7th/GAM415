@@ -1,0 +1,8 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/LTCG
+"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\PixelShader\Intermediate\Build\Win64\UE4\Shipping\PixelShader\Module.PixelShader.cpp.obj"
+"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Intermediate\Build\Win64\UE4\Shipping\PixelShader\PCLaunch.rc.res"
+/OUT:"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\PixelShader\Binaries\Win64\UE4-PixelShader-Win64-Shipping.lib"

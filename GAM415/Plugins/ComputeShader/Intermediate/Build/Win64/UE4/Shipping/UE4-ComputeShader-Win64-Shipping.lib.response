@@ -1,0 +1,8 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/LTCG
+"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\ComputeShader\Intermediate\Build\Win64\UE4\Shipping\ComputeShader\Module.ComputeShader.cpp.obj"
+"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Intermediate\Build\Win64\UE4\Shipping\ComputeShader\PCLaunch.rc.res"
+/OUT:"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\ComputeShader\Binaries\Win64\UE4-ComputeShader-Win64-Shipping.lib"

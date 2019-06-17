@@ -1,0 +1,7 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x86
+/SUBSYSTEM:WINDOWS
+"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\PixelShader\Intermediate\Build\Win32\UE4\Development\PixelShader\Module.PixelShader.cpp.obj"
+"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Intermediate\Build\Win32\UE4\Development\PixelShader\PCLaunch.rc.res"
+/OUT:"C:\Users\TrunK GAMING\Desktop\GAM415_Repo\GAM415\Plugins\PixelShader\Binaries\Win32\UE4-PixelShader.lib"
